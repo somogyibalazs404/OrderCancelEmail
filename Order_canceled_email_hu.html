@@ -1,0 +1,465 @@
+<html
+  style="width:100%;font-family:arial, 'helvetica neue', helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="telephone=no" name="format-detection">
+  <title>Knine template base</title>
+  <!--[if (mso 16)]>
+                                            <style type="text/css">
+                                            a {text-decoration: none;}
+                                            </style>
+                                            <![endif]-->
+  <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![endif]-->
+  <!--[if mso]>
+                                        <style type=”text/css”>
+                                        .fallback-font {
+                                        font-family: Verdana, Arial, sans-serif;
+                                        }
+                                        </style>
+                                        <![endif]-->
+  <style type="text/css">
+    /*latin*/
+    @font-face {
+      font-family: 'source sans pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'source sans pro';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /*latin-ext*/
+    @font-face {
+      font-family: 'source sans pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'source sans pro';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    <style type="text/css">@media only screen and (max-width:600px) {
+
+      p,
+      ul li,
+      ol li,
+      a {
+        font-size: 16px !important;
+        line-height: 150% !important
+      }
+
+      h1 {
+        font-size: 30px !important;
+        text-align: center;
+        line-height: 120% !important
+      }
+
+      h2 {
+        font-size: 26px !important;
+        text-align: center;
+        line-height: 120% !important
+      }
+
+      h3 {
+        font-size: 20px !important;
+        text-align: center;
+        line-height: 120% !important
+      }
+
+      h1 a {
+        font-size: 30px !important
+      }
+
+      h2 a {
+        font-size: 26px !important
+      }
+
+      h3 a {
+        font-size: 20px !important
+      }
+
+      .es-menu td a {
+        font-size: 16px !important
+      }
+
+      .es-header-body p,
+      .es-header-body ul li,
+      .es-header-body ol li,
+      .es-header-body a {
+        font-size: 16px !important
+      }
+
+      .es-footer-body p,
+      .es-footer-body ul li,
+      .es-footer-body ol li,
+      .es-footer-body a {
+        font-size: 16px !important
+      }
+
+      .es-infoblock p,
+      .es-infoblock ul li,
+      .es-infoblock ol li,
+      .es-infoblock a {
+        font-size: 12px !important
+      }
+
+      *[class="gmail-fix"] {
+        display: none !important
+      }
+
+      .es-m-txt-c,
+      .es-m-txt-c h1,
+      .es-m-txt-c h2,
+      .es-m-txt-c h3 {
+        text-align: center !important
+      }
+
+      .es-m-txt-r,
+      .es-m-txt-r h1,
+      .es-m-txt-r h2,
+      .es-m-txt-r h3 {
+        text-align: right !important
+      }
+
+      .es-m-txt-l,
+      .es-m-txt-l h1,
+      .es-m-txt-l h2,
+      .es-m-txt-l h3 {
+        text-align: left !important
+      }
+
+      .es-m-txt-r img,
+      .es-m-txt-c img,
+      .es-m-txt-l img {
+        display: inline !important
+      }
+
+      .es-button-border {
+        display: block !important
+      }
+
+      a.es-button {
+        font-size: 20px !important;
+        display: block !important;
+        border-width: 10px 0px 10px 0px !important
+      }
+
+      .es-btn-fw {
+        border-width: 10px 0px !important;
+        text-align: center !important
+      }
+
+      .es-adaptive table,
+      .es-btn-fw,
+      .es-btn-fw-brdr,
+      .es-left,
+      .es-right {
+        width: 100% !important
+      }
+
+      .es-content table,
+      .es-header table,
+      .es-footer table,
+      .es-content,
+      .es-footer,
+      .es-header {
+        width: 100% !important;
+        max-width: 600px !important
+      }
+
+      .es-adapt-td {
+        display: block !important;
+        width: 100% !important
+      }
+
+      .adapt-img {
+        width: 100% !important;
+        height: auto !important
+      }
+
+      .es-m-p0 {
+        padding: 0px !important
+      }
+
+      .es-m-p0r {
+        padding-right: 0px !important
+      }
+
+      .es-m-p0l {
+        padding-left: 0px !important
+      }
+
+      .es-m-p0t {
+        padding-top: 0px !important
+      }
+
+      .es-m-p0b {
+        padding-bottom: 0 !important
+      }
+
+      .es-m-p20b {
+        padding-bottom: 20px !important
+      }
+
+      .es-mobile-hidden,
+      .es-hidden {
+        display: none !important
+      }
+
+      .es-desk-hidden {
+        display: table-row !important;
+        width: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: inherit !important;
+        line-height: inherit !important
+      }
+
+      .es-desk-menu-hidden {
+        display: table-cell !important
+      }
+
+      table.es-table-not-adapt,
+      .esd-block-html table {
+        width: auto !important
+      }
+
+      table.es-social {
+        display: inline-block !important
+      }
+
+      table.es-social td {
+        display: inline-block !important
+      }
+    }
+
+    #outlook a {
+      padding: 0;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    .es-button {
+      mso-style-priority: 100 !important;
+      text-decoration: none !important;
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    .es-desk-hidden {
+      display: none;
+      float: left;
+      overflow: hidden;
+      width: 0;
+      max-height: 0;
+      line-height: 0;
+      mso-hide: all;
+    }
+
+    td .es-button-border:hover a.es-button-1 {
+      background: #222222 !important;
+      border-color: #222222 !important;
+    }
+
+    td .es-button-border-2:hover {
+      background: #222222 !important;
+      border-color: #2cb543 #2cb543 #aNaNaN #2cb543 !important;
+    }
+  </style>
+</head>
+
+<body
+  style="width:100%;font-family:arial, 'helvetica neue', helvetica, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0;">
+  <div class="es-wrapper-color" style="background-color:#F6F6F6;">
+    <!--[if gte mso 9]>
+                                                    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+                                                        <v:fill type="tile" color="#f6f6f6"></v:fill>
+                                                    </v:background>
+                                                <![endif]-->
+    <table class="es-wrapper" cellspacing="0" cellpadding="0" width="100%"
+      style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top;">
+      <tr style="border-collapse:collapse;">
+        <td valign="top" style="padding:0;Margin:0;">
+          <table class="es-header" cellspacing="0" cellpadding="0" align="center"
+            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top;">
+            <tr style="border-collapse:collapse;">
+              <td class="es-adaptive" align="center" style="padding:0;Margin:0;">
+                <table class="es-header-body" cellspacing="0" cellpadding="0" width="600" align="center"
+                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;">
+                  <tr style="border-collapse:collapse;">
+                    <td style="padding:15px;Margin:0;background-color:#333333;" bgcolor="#333" align="left">
+                      <table cellspacing="0" cellpadding="0" width="100%"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                        <tr style="border-collapse:collapse;">
+                          <td class="es-m-p0r" width="570" valign="top" align="center" style="padding:0;Margin:0;">
+                            <table cellspacing="0" cellpadding="0" width="100%"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                              <tr style="border-collapse:collapse;">
+                                <td class="es-m-p0l es-m-txt-c" align="center"
+                                  style="padding:0;Margin:0;padding-bottom:10px;padding-left:10px;padding-top:15px;">
+                                  <a href="https://shop.julius-k9.com" target="_blank"
+                                    style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:14px;text-decoration:underline;color:#1376C8;"><img
+                                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAAyCAYAAAB4SbajAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc5MTFDNjRFNkU4MzExRTZBRUJDOTZEN0IzOTUwNkMzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc5MTFDNjRENkU4MzExRTZBRUJDOTZEN0IzOTUwNkMzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZhNjdmOWM5LTZmMGYtNzY0ZS1hYjU2LTllMWExY2QxNzljYSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9j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"
+                                      alt="Julius-K9 logo"
+                                      style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"
+                                      title="Julius-K9 logo" width="170"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="es-content" cellspacing="0" cellpadding="0" align="center"
+            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;">
+            <tr style="border-collapse:collapse;">
+              <td align="center" style="padding:0;Margin:0;">
+                <table class="es-content-body" cellspacing="0" cellpadding="0" width="600" bgcolor="#ffffff"
+                  align="center"
+                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;">
+                  <tr style="border-collapse:collapse;">
+                    <td align="left" style="padding:20px;Margin:0;">
+                      <table cellspacing="0" cellpadding="0" width="100%"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                        <tr style="border-collapse:collapse;">
+                          <td width="560" valign="top" align="center" style="padding:0;Margin:0;">
+                            <table cellspacing="0" cellpadding="0" width="100%"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                              <tr style="border-collapse:collapse;">
+                                <td class="fallback-text" align="center" style="padding:0;Margin:0;">
+                                  <h1 class="fallback-text"
+                                    style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:'source sans pro', 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:normal;color:#333333;">
+                                    <strong>
+                                      <h3>Értesítés megrendelés törléséről<!--Rendelési szám: <span class="no-link">#{{var order.increment_id}}</span>--></h3>
+                                    </strong>
+                                  </h1>
+                                </td>
+                              </tr>
+                              <tr style="border-collapse:collapse;">
+                                <td align="center"
+                                  style="padding:0;Margin:0;padding-top:10px;padding-left:20px;padding-right:20px;">
+                                  <table cellspacing="0" cellpadding="0" width="20%" height="100%" border="0"
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                                    <tr style="border-collapse:collapse;">
+                                      <td
+                                        style="padding:0;Margin:0px;border-bottom:3px solid #FDB813;background:none;height:1px;width:100%;margin:0px;">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="es-content" cellspacing="0" cellpadding="0" align="center"
+            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;">
+            <tr style="border-collapse:collapse;">
+              <td class="es-adaptive" align="center" style="padding:0;Margin:0;">
+                <table class="es-content-body" cellspacing="0" cellpadding="0" width="600" align="center"
+                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;">
+                  <tr style="border-collapse:collapse;">
+                    <td align="left" bgcolor="#fdb813"
+                      style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:20px;padding-right:20px;background-color:#FDB813;">
+                      <table cellspacing="0" cellpadding="0" width="100%"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;">
+                        <tr style="border-collapse:collapse;">
+                          <td width="560" valign="top" align="center" style="padding:0;Margin:0;">
+                            <table cellspacing="0" cellpadding="0" width="100%" bgcolor="transparent"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;">
+                              <tr style="border-collapse:collapse;">
+                                <td align="left" class="es-m-txt-l" style="padding:0;Margin:0;padding-bottom:15px;">
+                                  <h3
+                                    style="Margin:0;line-height:36px;mso-line-height-rule:exactly;font-family:'source sans pro', 'helvetica neue', helvetica, arial, sans-serif;font-size:18px;font-style:normal;font-weight:normal;color:#333333;">
+                                    <strong>Tisztelt Címzett
+                                      <!--{{htmlescape var=$order.getCustomerName()}}-->
+                                      <!--{{htmlescape var=$customer.firstname}}-->,
+                                    </strong>
+                                  </h3>
+                                </td>
+                              </tr>
+                              <tr style="border-collapse:collapse;">
+                                <td class="fallback-text" align="left" style="padding:0;Margin:0;">
+                                  <p>
+                                    Ez egy automatikus értesítés, hogy megrendelését rendszerünk törölte.
+
+                                    <br>Amennyiben Ön kérte vásárlásának törlését, úgy további teendője nincs.
+                                  </p>
+                                  <p>Abban az esetben, ha a vásárlási érték kiegyenlítésének hiánya miatt törölte
+                                    rendszerünk megrendelését, de továbbra is igényt tartana termékeinkre,
+                                    úgy kérnénk, hogy adja le újra megrendelését, és az Ön számára legmegfelelőbb
+                                    fizetési módot válassza a vásárlás értékének megtérítésére.
+                                  </p>
+                                  <p>Amennyiben egyik eset sem vonatkozik megrendelésére, úgy kérnénk, hogy vegye fel
+                                    velünk a kapcsolatot az alábbi elérhetőségek egyikén:
+                                    <br>shop@julius-k9.com
+                                    <br>+36 20 237 4848
+                                    <br>+36 24 515 560
+                                    <br>(Munkanapokon 7:30-16:00 között)
+                                  </p>
+                                  <p><br><strong>Kérjük, hogy erre az e-mailre ne válaszoljon.</strong>
+                                  </p>
+                                  <p></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
